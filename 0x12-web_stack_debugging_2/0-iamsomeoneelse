@@ -1,11 +1,4 @@
 #!/usr/bin/env bash
 
-if [ $# -ne 1 ]; then
-  echo "Error: script requires one argument (username)"
-  exit 1
-fi
-
-username=$1
-
 # run whoami command under the user passed as an argument
-sudo -u $username whoami
+sudo -u "$1" whoami
